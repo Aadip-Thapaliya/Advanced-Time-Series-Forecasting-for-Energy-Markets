@@ -1,8 +1,7 @@
 # [Your Project Title Here]
 
 ## Repository Link
-
-[https://github.com/your_username/your_project_name]
+(https://github.com/Aadip-Thapaliya/EATSP-Energy-Advance-Time-Series-Prediction)
 
 ## Description
 
