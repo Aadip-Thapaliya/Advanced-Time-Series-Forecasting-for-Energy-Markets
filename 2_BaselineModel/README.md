@@ -5,20 +5,21 @@
 ## Baseline Model Results
 
 ### Model Selection
-- **Baseline Model Type:** [e.g., Random Forest, Logistic Regression, Linear Regression, Naive Bayes, etc.]
-- **Rationale:** [Brief explanation of why this model was chosen as baseline]
+- **Baseline Model Type:** SARIMAX (Seasonal ARIMA with Exogenous Variables)
+- **Rationale:** We selected SARIMAX because it captures seasonality, autocorrelation, and the influence of external drivers such as residual load and renewable generation. This makes it a suitable and interpretable baseline for electricity price forecasting.
 
 ### Model Performance
-- **Evaluation Metric:** [e.g., Accuracy, F1-Score, Precision, Recall, MSE, MAE, R², etc.]
-- **Performance Score:** [e.g., 85% accuracy, F1-score of 0.78, MSE of 0.15]
-- **Cross-Validation Score:** [Mean and standard deviation of CV scores, e.g., 0.82 ± 0.03]
+- **Evaluation Metric:** MSE, RMSE
+- **Performance Score:** MSE: 1424.25, RMSE: 37.73 EUR/MWh
 
 ### Evaluation Methodology
-- **Data Split:** [Train/Validation/Test split ratios, e.g., 70/15/15]
-- **Evaluation Metrics:** [List all metrics used and justify why they are appropriate for this problem]
+- **Data Split:** Train/Test = 4 weeks / 1 day time steps 
+- **Evaluation Metrics:** MSE/RMSE to quantify average forecast error in price units
 
 ### Metric Practical Relevance
-[Explain the practical relevance and business impact of each chosen evaluation metric. How do these metrics translate to real-world performance and decision-making? What do the metric values mean in the context of your specific problem domain?]
+MSE supports model comparison but is less intuitive due to squared units.
+RMSE expresses the average error in €/MWh, making it directly interpretable for market participants. An RMSE of ~46 €/MWh means the baseline is moderately accurate but struggles with volatility and price spikes.
+
 
 ## Next Steps
 This baseline model serves as a reference point for evaluating more sophisticated models in the [Model Definition and Evaluation](../3_Model/README.md) phase.

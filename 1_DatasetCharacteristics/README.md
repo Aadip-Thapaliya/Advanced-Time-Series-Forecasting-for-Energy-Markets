@@ -5,27 +5,48 @@
 ## Dataset Information
 
 ### Dataset Source
-- **Dataset Link:** [Provide a direct link to your dataset. If the dataset is private, explain the reason and provide contact information for the dataset owner]
-- **Dataset Owner/Contact:** [If applicable, provide contact information for private datasets]
+- **Dataset Link:** "https://www.energy-charts.info/charts/power/chart.htm?c=DE&legendItems=0wm&interval=week&year=2025&source=public"
+- **Dataset Owner/Contact:** It's a collection of public data. Collected by Fraunhofer Institute for Solar Energy Systems ISE. The sources are "https://www.energy-charts.info/sources.html?l=en&c=DE"
 
 ### Dataset Characteristics
-- **Number of Observations:** [Total number of samples/records in your dataset. For time series data, also specify the temporal resolution (e.g., daily, hourly, etc.)]
-- **Number of Features:** [Total number of features in your dataset]
+- **Number of Observations:** Samples: 70176 and the intervall is 15minutes.
+- **Number of Features:** for 23 features
 
 ### Target Variable/Label
-- **Label Name:** [Name of the target variable/column]
-- **Label Type:** [Classification/Regression/Clustering/Other]
-- **Label Description:** [What does this label represent? What is the prediction task?]
-- **Label Values:** [For classification: list of classes and their meanings. For regression: range of values. For other tasks: describe the label structure]
-- **Label Distribution:** [Brief description of class balance for classification or value distribution for regression]
+- **Label Name:** "Day Ahead Auction (DE-LU)"
+- **Label Type:** "Regression"
+- **Label Description:** The label present the day ahead auction price for electricity in germany.  
+- **Label Values:** The value can be negative or positive. typically between -125EUR/MWh and 400 EUR/MWh
+- **Label Distribution:** There is no trend in the data but a high seasonality.
 
 ### Feature Description
 [Provide a brief description of each feature or group of features in your dataset. If you have many features, group them logically and describe each group. Include information about data types, ranges, and what each feature represents.]
 
-**Example format:**
-- **Feature 1 (feature_name):** [Description of what this feature represents, data type, and any relevant details]
-- **Feature 2 (feature_name):** [Description of what this feature represents, data type, and any relevant details]
-- **Feature Group (group_name):** [Description of a group of related features]
+**All Power MW:**
+- **Feature 1 :** Hydro pumped storage consumption 
+- **Feature 2 :** Cross border electricity trading
+- **Feature 3 :** Hydro Run-of-River
+- **Feature 4 :** Biomass
+- **Feature 5 :** Fossil brown coal / lignite
+- **Feature 6 :** Fossil hard coal
+- **Feature 7 :** Fossil oil
+- **Feature 8 :** Fossil coal-derived gas
+- **Feature 9 :** Fossil gas
+- **Feature 10 :** Geothermal
+- **Feature 11 :** Hydro water reservoir
+- **Feature 12 :** Hydro pumped storage
+- **Feature 13 :** Others
+- **Feature 14 :** Waste
+- **Feature 15 :** Wind offshore
+- **Feature 16 :** Wind onshore
+- **Feature 17 :** Solar
+- **Feature 18 :** Load
+- **Feature 19 :** Residual load
+**Renewable share (%):**
+- **Feature 20 :** Renewable share of load
+- **Feature 21 :** Renewable share of generation
+**Price (EUR/MWh):**
+- **Feature 22 :** Day Ahead Auction (DE-LU)
 
 ## Exploratory Data Analysis
 
