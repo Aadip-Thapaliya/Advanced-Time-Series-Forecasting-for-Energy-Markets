@@ -1,4 +1,4 @@
-# ⚡ EATSP - Energy Advance Time Series Prediction
+# ⚡ Advanced Time Series Forecasting for Energy Markets
 
 > Advanced machine learning models for electricity price forecasting in the German (DE-LU) energy market
 
